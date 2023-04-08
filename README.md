@@ -15,3 +15,10 @@ The slope of the linear regression is not 0 due to the is not considered to be z
 The linear regression does predict mpg of MechaCar prototypes effectively. With a P value of 5.35 * 10^11 it shows that we can reject the null hypothesis and that these factors have an effect on mpg. Along with the R-squared value of .7149, we know that 71% of the time our linear graph will correctly predict the effect each coefficent has on mpg.
 
 <img src= "https://github.com/DAsInDavid1/MechaCar_Statistical_Analysis/blob/main/Pictures/Linear_Regression_P%26R%5E2_value.png" width=50% height=50%> 
+
+## Summary Statistics on Suspension Coils
+As seen in the chart below, the total variance for all lots was concederably high, but not exceeding 100 pounds per square inch. However once looking at the per lot summary, we can see that lot 3 had a variance of 170 PSI. This lot made our total summary extremly diffferent then what it should have been with the first two lots. We will need to look into why lot 3 had such variance and try to see if it was due to human error, or machine error. Even though our total summary had our variance in a acceptable range we should not use the "must not exceed 100 pounds per square inch" rule since as a total summary it should be much lower. I would recommend that we lower our acceptable range for total summary down to 50 pounds per square inch variance so that we know when we must start looking at indivudal lots and should have a much more consistant manufacturing process.
+
+| Total Summary  | Lots Summary
+| ------------- | -------------  
+| <img src= "https://github.com/DAsInDavid1/MechaCar_Statistical_Analysis/blob/main/Pictures/PSI_total_summary.png" width=100% height=100%>   | <img src= "https://github.com/DAsInDavid1/MechaCar_Statistical_Analysis/blob/main/Pictures/PSI_by_lots.png" width=100% height=100%>   
