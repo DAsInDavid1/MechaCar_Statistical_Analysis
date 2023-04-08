@@ -15,3 +15,17 @@ mpg_linear <-lm( mpg~vehicle_length +
 ##performing summary to get p-value and r-squared
 summary(mpg_linear)
 
+## Read CSV file
+suspension <-read_csv("Suspension_Coil.csv")
+
+## performing summary of suspensions
+total_summary<- summarize(suspension, mean(PSI), 
+                          median(PSI), var(PSI), 
+                          sd(PSI))
+
+## grouping lots together
+lots <- group_by(suspension, Manufacturing_Lot)
+## summarizing lots
+lots_summary <- summarize(lots, mean(PSI), 
+                          median(PSI), var(PSI), 
+                          sd(PSI))
