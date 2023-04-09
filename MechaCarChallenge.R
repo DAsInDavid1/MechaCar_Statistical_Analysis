@@ -29,3 +29,11 @@ lots <- group_by(suspension, Manufacturing_Lot)
 lots_summary <- summarize(lots, mean(PSI), 
                           median(PSI), var(PSI), 
                           sd(PSI))
+
+## t-testing all manufacturing lots against mean PSI
+t.test(suspension$PSI, mu=1500)
+
+## t-testing each manufacturing lot against PSI
+t.test(subset(lots$PSI, lots$Manufacturing_Lot == "Lot1"), mu=1500 )
+t.test(subset(lots$PSI, lots$Manufacturing_Lot == "Lot2"), mu=1500 )
+t.test(subset(lots$PSI, lots$Manufacturing_Lot == "Lot3"), mu=1500 )
