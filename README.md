@@ -22,3 +22,15 @@ As seen in the chart below, the total variance for all lots was concederably hig
 | Total Summary  | Lots Summary
 | ------------- | -------------  
 | <img src= "https://github.com/DAsInDavid1/MechaCar_Statistical_Analysis/blob/main/Pictures/PSI_total_summary.png" width=100% height=100%>   | <img src= "https://github.com/DAsInDavid1/MechaCar_Statistical_Analysis/blob/main/Pictures/PSI_by_lots.png" width=100% height=100%>   
+
+## T-Tests on Suspension Coils
+Seen in the Manufacturing T-test below, assuming our significance level was 0.05, our p-value is over the level at which was acceptable. We do not have suffiecent evidence to reject the null hypthesis that the populations mean is not statistcally different from apopulation mean of 1500 PSI.
+
+<img src= "https://github.com/DAsInDavid1/MechaCar_Statistical_Analysis/blob/main/Pictures/t-test_all_manufacting_lots.png" width=50% height=50%>
+
+However, after doing t-tests for each indivdual lot. It can be seen that lot 3 has a p-value of 0.04 which means we can reject the null hypthesis for that lot only. The other two, and especially lot 1 has a p-value over 0.05 so we cannot reject the null hypothesis for those two lots. So if we want all our lots to be at a mean of 1500 PSI, then we would have to look at lot 3 since that is the one we can be certain with 96% accuracy that it does not have the 1500 PSI mean we are looking for.
+
+| Lot 1 | Lot 2 | Lot 3
+| ------------- | ------------- | -------------
+| <img src= "https://github.com/DAsInDavid1/MechaCar_Statistical_Analysis/blob/main/Pictures/t-test_lot_1.png" width=100% height=100%>   | <img src= "https://github.com/DAsInDavid1/MechaCar_Statistical_Analysis/blob/main/Pictures/t-test_lot_2.png" width=100% height=100%>   |  <img src= "https://github.com/DAsInDavid1/MechaCar_Statistical_Analysis/blob/main/Pictures/t-test_lot_3.png" width=100% height=100%>
+
